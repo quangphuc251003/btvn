@@ -48,13 +48,12 @@
                 if (tong >= 9) {
                      alert("SX");
                      document.getElementById("kq").innerHTML ="SX";
-                    // document.getElementById("kq").style.background = "red";
                      document.getElementById("kq").style.color = "red";
                 } else if (tong >= 8) {
                      alert("Giỏi");
                      document.getElementById("kq").innerHTML ="Giỏi";
                      document.getElementById("kq").style.color = "red";
-                } else if (tong > 7) {
+                } else if (tong >= 7) {
                      alert("Khá");
                      document.getElementById("kq").innerHTML ="Khá";
                      document.getElementById("kq").style.color = "red";
@@ -62,14 +61,14 @@
                      alert("TB");
                      document.getElementById("kq").innerHTML ="TB";
                      document.getElementById("kq").style.color = "red";
-                } else if (tong == 0) {
+                } else if (tong >= 0 && tong <5) {
                      alert("Yếu");  
                      document.getElementById("kq").innerHTML ="Yếu";
                      document.getElementById("kq").style.color = "red";
                 }
             } else {
                  alert("vui lòng thử lại");
-                document.getElementById("sum").style.display = "none";  //ẩn đi input tổng
+                document.getElementById("sum").style.display = "none"; //ẩn đi input tổng
               
             }
         }
